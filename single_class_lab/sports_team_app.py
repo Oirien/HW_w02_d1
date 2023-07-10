@@ -1,3 +1,12 @@
-from HW_w02_d1.single_class_lab.team import SportsTeam
+from team import SportsTeam
 
 team = SportsTeam("The Weirdos",["Joe", "Jim", "John", "Jeremy"], "El Bandito")
+
+print(team.has_player("John"))
+print(team.has_player("Jimmy"))
+
+team.add_player("Jimmy")
+print(team.has_player("Jimmy"))
+
+team.play_game(True)
+print(team.points)
